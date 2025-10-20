@@ -1,0 +1,49 @@
+Etapa 1: Levantamento de Requisitos
+O levantamento de requisitos é a base fundamental para qualquer projeto de modelagem de banco de dados. Nesta etapa, foram identificadas as regras de negócio e as principais necessidades operacionais da faculdade, com o objetivo de garantir que o modelo de dados represente fielmente os processos acadêmicos e administrativos da instituição.
+
+🎯 Objetivo
+Compreender e documentar as regras que regem o funcionamento da faculdade, suas limitações, fluxos e entidades envolvidas, para que a modelagem posterior seja precisa, eficiente e alinhada às expectativas do sistema.
+
+📋 Requisitos Levantados
+👨‍🎓 Alunos
+Cada aluno pode estar matriculado em apenas um curso por vez.
+
+Alunos são identificados por um código único (RA).
+
+Alunos podem trancar a matrícula, ficando sem vínculo com disciplinas durante o semestre.
+
+Em cada semestre, um aluno pode se matricular em até 9 disciplinas.
+
+Um aluno pode ser reprovado no máximo 3 vezes na mesma disciplina.
+
+A faculdade comporta até 3000 alunos simultaneamente, distribuídos em 10 cursos distintos.
+
+A cada ano, 300 novos alunos ingressam na instituição.
+
+O histórico escolar de cada aluno registra todas as disciplinas cursadas, incluindo nota final, frequência e período.
+
+📚 Cursos e Disciplinas
+Cada curso é composto por diversas disciplinas.
+
+Existem 90 disciplinas no total.
+
+Cada disciplina possui um código de identificação único.
+
+Disciplinas podem ser obrigatórias ou optativas, dependendo do curso.
+
+Cada disciplina pertence a um departamento específico.
+
+Cada turma de disciplina pode ter no máximo 30 alunos.
+
+👨‍🏫 Professores
+Professores podem ser cadastrados mesmo sem estarem lecionando.
+
+Existem 40 professores ativos na instituição.
+
+Cada professor pode lecionar até 4 disciplinas diferentes.
+
+Professores são vinculados a departamentos específicos.
+
+Cada professor possui um código de identificação único.
+
+Essa documentação servirá como referência para as próximas etapas do projeto, como a identificação de entidades, modelagem conceitual e implementação. Ela garante que todas as regras de negócio estejam refletidas na estrutura do banco de dados, promovendo integridade, consistência e escalabilidade.
