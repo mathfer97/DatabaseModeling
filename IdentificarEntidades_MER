@@ -1,0 +1,114 @@
+Etapa 2 e 3: Identificação de Entidades, Relacionamentos e Modelo Entidade-Relacionamento (MER)
+
+Após o levantamento de requisitos, foi possível identificar as principais entidades e relacionamentos que compõem o sistema acadêmico da faculdade.
+Essa etapa é essencial para traduzir as regras de negócio em uma estrutura lógica de dados, servindo como base para a modelagem conceitual do banco.
+
+🎯 Objetivo
+
+Definir as entidades, seus atributos e os relacionamentos existentes entre elas, garantindo que todas as regras identificadas na etapa anterior estejam corretamente representadas no Modelo Entidade-Relacionamento (MER).
+
+🏛️ Entidades Identificadas
+
+A partir da análise das regras de negócio, foram identificadas as seguintes entidades principais:
+
+Aluno
+
+Professor
+
+Disciplina
+
+Curso
+
+Departamento
+
+💡 Os números nas regras de negócio representam a quantidade de instâncias das entidades.
+Exemplo: 40 professores = 40 instâncias de Professor | 10 cursos = 10 instâncias de Curso
+
+🔗 Relacionamentos entre as Entidades
+
+Os relacionamentos foram identificados a partir dos verbos nas regras de negócio, que indicam a interação entre as entidades.
+
+Relacionamentos identificados:
+
+Aluno está matriculado em Curso
+
+Aluno cursa Disciplina
+
+Aluno realizou Disciplina (para fins de histórico)
+
+Disciplina pertence a Curso
+
+Professor ministra Disciplina
+
+Professor pertence a Departamento
+
+Departamento é responsável por Disciplina
+
+Departamento controla Curso
+
+Disciplina depende de Disciplina (pré-requisitos)
+
+Essas relações formam a base conceitual para o diagrama MER, representando como as entidades interagem dentro do sistema.
+
+🧱 Identificação de Atributos
+👨‍🎓 Aluno
+- Número de Matrícula  
+- Nome  
+- Sobrenome  
+- Data de Nascimento *(adicionado após levantamento)*  
+- Sexo *(adicionado após levantamento)*  
+- Endereço (Rua, Número, Bairro, CEP, Cidade, Estado)  
+- Código do Curso  
+- Status *(adicionado após levantamento)*  
+- Código da Turma *(adicionado após levantamento)*  
+- E-mail *(adicionado após levantamento)*  
+
+👨‍🏫 Professor
+- Código do Professor  
+- Nome  
+- Sobrenome  
+- Código do Departamento  
+- Status *(adicionado após levantamento)*  
+
+📘 Disciplina
+- Código da Disciplina  
+- Nome da Disciplina  
+- Descrição Curricular  
+- Código do Departamento  
+- Número de Alunos  
+- Carga Horária *(adicionado após levantamento)*  
+
+🎓 Curso
+- Código do Curso  
+- Nome do Curso  
+- Código do Departamento  
+
+🏢 Departamento
+- Código do Departamento  
+- Nome do Departamento  
+
+🆕 Novas Entidades Após o Levantamento de Requisitos
+
+Durante a análise detalhada, novas entidades foram incluídas para representar adequadamente os processos acadêmicos.
+
+📜 Histórico
+- Código do Histórico  
+- Notas  
+- Média  
+- Frequência  
+- Período de Realização  
+- RA (Aluno)  
+- Código da Disciplina  
+
+🧾 Turma
+- Código da Turma  
+- Período  
+- Código do Curso  
+- Número de Alunos  
+- Data de Início  
+- Data de Fim  
+
+📊 Conclusão
+
+A identificação das entidades, relacionamentos e atributos constitui a estrutura conceitual do banco de dados.
+Essas informações servirão de base para a próxima etapa — a modelagem lógica e física, onde o diagrama será traduzido em tabelas, chaves primárias, estrangeiras e restrições de integridade.
