@@ -10,15 +10,10 @@ Definir as entidades, seus atributos e os relacionamentos existentes entre elas,
 🏛️ Entidades Identificadas
 
 A partir da análise das regras de negócio, foram identificadas as seguintes entidades principais:
-
 Aluno
-
 Professor
-
 Disciplina
-
 Curso
-
 Departamento
 
 💡 Os números nas regras de negócio representam a quantidade de instâncias das entidades.
@@ -29,23 +24,14 @@ Exemplo: 40 professores = 40 instâncias de Professor | 10 cursos = 10 instânci
 Os relacionamentos foram identificados a partir dos verbos nas regras de negócio, que indicam a interação entre as entidades.
 
 Relacionamentos identificados:
-
 Aluno está matriculado em Curso
-
 Aluno cursa Disciplina
-
 Aluno realizou Disciplina (para fins de histórico)
-
 Disciplina pertence a Curso
-
 Professor ministra Disciplina
-
 Professor pertence a Departamento
-
 Departamento é responsável por Disciplina
-
 Departamento controla Curso
-
 Disciplina depende de Disciplina (pré-requisitos)
 
 Essas relações formam a base conceitual para o diagrama MER, representando como as entidades interagem dentro do sistema.
